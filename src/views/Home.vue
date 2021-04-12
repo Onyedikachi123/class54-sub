@@ -101,9 +101,8 @@
            </div>
         </v-flex>
         <v-flex xs12 md6> 
-          <div class="float-right">
-            
-
+          <div class="float-right home-imgage">
+            <img src="../assets/Group 4.png" alt="Home Image" />
           </div>
         </v-flex>
       </v-layout>
@@ -185,6 +184,11 @@ position: absolute;
 left: 43.88%;
 top: 56.70%;
 }
+.home .home-imgage  img{
+     margin-top: -125px;
+    width: 80%;
+    margin-left: 33%;
+}
 
 @media (max-width:629px) {
 .home .deigns {
@@ -195,6 +199,13 @@ top: 56.70%;
 }
 .home input[type="text"] {
   width: 100%;
+}
+.home .home-imgage img {
+  display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -41px;
+    width: 100%;
 }
 }
 

@@ -16,4 +16,5 @@ export default {
 .footer  {
     margin-top: 300px;
 }
+
 </style>

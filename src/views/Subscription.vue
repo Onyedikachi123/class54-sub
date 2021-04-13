@@ -75,7 +75,12 @@ form {
   margin-top: 100px;
 }
 .subscription__content {
-  height: 100vh;
+  height: 92vh;
   background-color: #F4FAF6;
+}
+@media (max-width: 600px) {
+    .subscription__content {
+      height: 100vh;
+    }
 }
 </style>

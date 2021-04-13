@@ -120,8 +120,12 @@ export default {
 </script>
 
 <style>
+.home {
+  background: linear-gradient(180deg, #e3fff1 -82.57%, #ffffff 100%);
+  padding-top: 100px;
+}
 .home-container {
- margin-top: 100px !important;
+ /* margin-top: 100px !important; */
  margin-bottom: 36px !important;
 
 }

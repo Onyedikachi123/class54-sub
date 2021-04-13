@@ -1,6 +1,5 @@
 <template>
   <v-app>
-
     <v-main> 
       <router-view></router-view>
     </v-main>
@@ -13,8 +12,6 @@
 export default {
   name: 'App',
 
-
-
   data: () => ({
     //
   }),
@@ -24,9 +21,9 @@ export default {
 *{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 main {
-  background: linear-gradient(180deg, #e3fff1 -82.57%, #ffffff 100%);
   font-family: 'Source Sans Pro', sans-serif;
 }
 

@@ -1,8 +1,68 @@
 <template>
-  <div class="activate-page">
+  <div class="Download-page">
     <Navbar />
+
     <div class="activate-wrapper">
-     
+      <v-container>
+        <v-row justify="center" class="mt-9">
+          <section class="Activate__content">
+            <div class="Activate__title">
+              <h4>Activate your App</h4>
+            </div>
+            <v-container>
+              <v-layout row wrap>
+                <v-flex xs12 md7>
+                  <v-container>
+                    <form class="activate-form">
+                      <br />
+                      <label for="number">10-Digit unique serial number</label>
+                      <input
+                        type="text"
+                        placeholder="e.g. W435-635-773"
+                        name="number"
+                        id="number"
+                        required
+                      />
+                      <label for="phone number">Phone Number</label>
+                      <input
+                        type="text"
+                        placeholder="eg: 0810242546724"
+                        name="number"
+                        id="number"
+                        required
+                      />
+                      <button type="submit" class="numberbtn mb-3">
+                        Proceed
+                      </button>
+                    </form>
+                  </v-container>
+                </v-flex>
+                <v-flex xs12 md5>
+                  <v-container>
+                    <div class="activate-list">
+                      <h5>How to Activate Software</h5>
+                      <ul>
+                        <li class="mb-3">
+                          Download and follow the installation wizard till
+                          installation is completed.
+                        </li>
+                        <li class="mb-3">
+                          Upon successful installion, launch the app and
+                          navigate to activation.
+                        </li>
+                        <li>
+                          Copy the Unique serial number displayed and enter it
+                          here
+                        </li>
+                      </ul>
+                    </div>
+                  </v-container>
+                </v-flex>
+              </v-layout>
+            </v-container>
+          </section>
+        </v-row>
+      </v-container>
       <Footer />
     </div>
   </div>
@@ -68,19 +128,83 @@ export default {
 </script>
 
 <style>
-.activate-form-wrapper {
- width: 800px;
-}
 .activate-wrapper {
   background-color: #f4faf6;
 }
-.activate-list {
+
+.form-activate {
   margin: 30px 15px;
-  padding: 15px;
-background-color: #F5FFFA !important;
-border-radius: 4px;
 }
-.form-activate{
- margin: 30px 15px;
+.Activate__content {
+  width: 800px;
+  background: #ffffff;
+  box-shadow: 0px 3px 4px rgba(0, 35, 16, 0.1);
+  border-radius: 4px;
+  padding: 20px 30px;
+}
+.Activate__content .Activate__title h4 {
+  font-weight: 700;
+  font-size: 24px;
+  color: #00506b;
+  margin: 10px 20px;
+}
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type="text"]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit button */
+.numberbtn {
+  padding: 10px 12px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  background: #29cc7a;
+  border-radius: 4px;
+}
+
+.numberbtn:hover {
+  opacity: 1;
+}
+.activate-list {
+  background: #f5fffa;
+  border-radius: 4px;
+  padding: 20px 30px;
+  width: 279px;
+  margin-top: -44px;
+  height: 277px;
+}
+.activate-list ul li {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+.activate-list h5 {
+  font-size: 16px;
+  font-weight: 700;
+  font-style: normal;
+}
+@media (max-width: 600px) {
+  .Activate__content {
+    width: 100%;
+    margin: 0 15px;
+  }
+  .activate-list {
+    margin-top: 10px;
+    width: 300px;
+  }
 }
 </style>

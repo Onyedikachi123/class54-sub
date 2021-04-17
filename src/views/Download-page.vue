@@ -239,6 +239,9 @@ export default {
   max-height: 1000px;
 }
 @media (max-width: 600px) {
+  .Download__content {
+    width: 100%;
+  }
   .action-group {
     display: grid;
     grid-gap: inherit;
@@ -246,8 +249,6 @@ export default {
   .jamb-logo {
     width: 113px;
   }
-  /* .faq {
-    max-width: 100%;
-  } */
+
 }
 </style>

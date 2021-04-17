@@ -228,10 +228,10 @@ top: 56.70%;
 }
 .home .home-imgage img {
   display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: -41px;
-    width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -41px;
+  width: 100%;
 }
 }
 

@@ -74,10 +74,12 @@
             admissions for Pre-college, Undergraduate and Post-graduate levels.
           </p>
           <p class="mb-4" style="font-size: 20px; font-weight: 600">Signup below to get notified when we launch</p>
+          <form @submit="postData" method="post">
            <label>
-             <input type="text" placeholder="Email Address"/>
-             <button>Notify me</button>
+             <input type="text" placeholder="Email Address" v-model="formData.email"/>
+             <button type="submit">Notify me</button>
            </label>
+           </form>
            <p class="mt-5 span-p">Have an enquiry? Email us at <span>info@class54.com</span></p>
            <p class="my-15" style="font-size: 12px">Copyright  © 2021. Class54 Education LTD.</p>
 
@@ -111,11 +113,31 @@
 </template>
 
 <script>
-// @ is an alias to /src
-// import HelloWorld from '@/components/HelloWorld.vue'
+import Vue from 'vue'
+import axios from 'axios'
+import VueAxios from 'vue-axios'
+Vue.use(VueAxios, axios)
 
 export default {
   name: "Home",
+  data() {
+    return {
+      formData: {
+        email: null,
+      }
+    }
+  },
+  methods: {
+    postData(e){
+      this.axios.post("http://class54-backend.herokuapp.com/admin/notify/create", this.formData)
+      .then((result) => {
+        console.log(result)
+      })
+      this.formData = "";
+      e.preventDefault();
+    }
+  }
+
 };
 </script>
 
@@ -146,7 +168,7 @@ padding: 0 15px;
 }
 .home button {
   position: absolute;
-  top: -10px;
+  top: 0px;
   bottom: 0;
   right: 0;
   background-color: #29CC7A;
@@ -202,14 +224,14 @@ top: 56.70%;
   padding:0 25px !important;
 }
 .home input[type="text"] {
-  width: 100%;
+  width: 350px;
 }
 .home .home-imgage img {
   display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: -41px;
-    width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -41px;
+  width: 100%;
 }
 }
 

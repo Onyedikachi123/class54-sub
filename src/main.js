@@ -1,6 +1,10 @@
+import '@babel/polyfill'
+import 'mutationobserver-shim'
 import Vue from 'vue'
+import './plugins/bootstrap-vue'
 import App from './App.vue'
 import router from './router'
+import 'animate.css'
 import store from './store'
 import vuetify from './plugins/vuetify';
 import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'

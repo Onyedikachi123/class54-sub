@@ -48,7 +48,7 @@ input[type="text"] {
   margin: 5px 0 22px 0;
   display: inline-block;
   border: none;
-  background: #f1f1f1;
+  background: #fff;
 }
 
 input[type="text"]:focus {

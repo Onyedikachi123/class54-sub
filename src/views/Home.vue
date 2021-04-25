@@ -113,10 +113,10 @@
 </template>
 
 <script>
-import Vue from 'vue'
+
 import axios from 'axios'
-import VueAxios from 'vue-axios'
-Vue.use(VueAxios, axios)
+// import VueAxios from 'vue-axios'
+// Vue.use(VueAxios, axios)
 
 export default {
   name: "Home",
@@ -129,11 +129,11 @@ export default {
   },
   methods: {
     postData(e){
-      this.axios.post("http://class54-backend.herokuapp.com/admin/notify/create", this.formData)
+      axios.post("http://class54-backend.herokuapp.com/admin/notify/create", this.formData)
       .then((result) => {
         console.log(result)
       })
-      this.formData = "";
+      this.formData.email = "";
       e.preventDefault();
     }
   }

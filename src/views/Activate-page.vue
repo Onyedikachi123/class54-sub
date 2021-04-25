@@ -130,10 +130,13 @@ export default {
 <style>
 .activate-wrapper {
   background-color: #f4faf6;
+  padding-top: 100px;
 }
-
+form {
+  margin-top: 0 !important;
+}
 .form-activate {
-  margin: 30px 15px;
+  margin: 30px 15px !important;
 }
 .Activate__content {
   width: 800px;
@@ -159,9 +162,15 @@ input[type="text"] {
   border-radius: 4px;
 }
 
+::-webkit-input-placeholder {color: #BDBDBD;;} /* Chrome/Opera/Safari */
+::-moz-placeholder { color: #BDBDBD;;} /* Firefox 19+ */
+:-ms-input-placeholder { color: #BDBDBD;;} /* IE 10+ */
+:-moz-placeholder {color: #BDBDBD;;} 
+
 input[type="text"]:focus {
   background-color: #ddd;
   outline: none;
+  transition: background-color 0.5s ease;
 }
 
 /* Set a style for the submit button */

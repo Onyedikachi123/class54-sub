@@ -125,6 +125,7 @@ export default {
 <style>
 .download-wrapper {
   background-color: #f4faf6;
+  padding-top: 100px;
 }
 .Download-card {
   margin-top: 50px;
@@ -136,7 +137,7 @@ export default {
   background: #ffffff;
   box-shadow: 0px 3px 4px rgba(0, 35, 16, 0.1);
   border-radius: 4px;
-  border: 1px solid #ccc;
+  /* border: 1px solid #ccc; */
   padding: 20px 30px;
 }
 .Download__content .download__title {

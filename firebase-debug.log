@@ -67,3 +67,12 @@ Before we get started, keep in mind:
 [info] 
 [info] ✔  Success! Logged into GitHub as Onyedikachi123 
 [info] 
+[debug] [2021-04-25T19:26:15.434Z] >>> [apiv2][query] GET https://api.github.com/repos/class54/actions/secrets/public-key type=owner
+[debug] [2021-04-25T19:26:15.454Z] >>> [apiv2][query] GET https://api.github.com/repos///actions/secrets/public-key type=owner
+[debug] [2021-04-25T19:26:15.458Z] >>> [apiv2][query] GET https://api.github.com/repos/desktop-subscription-frontend/actions/secrets/public-key type=owner
+[debug] [2021-04-25T19:26:16.082Z] <<< [apiv2][status] GET https://api.github.com/repos/class54/actions/secrets/public-key 404
+[debug] [2021-04-25T19:26:16.082Z] <<< [apiv2][body] GET https://api.github.com/repos/class54/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2021-04-25T19:26:16.086Z] <<< [apiv2][status] GET https://api.github.com/repos///actions/secrets/public-key 404
+[debug] [2021-04-25T19:26:16.086Z] <<< [apiv2][body] GET https://api.github.com/repos///actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2021-04-25T19:26:16.121Z] <<< [apiv2][status] GET https://api.github.com/repos/desktop-subscription-frontend/actions/secrets/public-key 404
+[debug] [2021-04-25T19:26:16.121Z] <<< [apiv2][body] GET https://api.github.com/repos/desktop-subscription-frontend/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}

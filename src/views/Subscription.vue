@@ -102,7 +102,7 @@ export default {
           "http://class54-backend.herokuapp.com/admin/activate",
         {
           phone_no: this.phone,
-          serial: "J8F8F73C61",
+          serial: "J8F8-F73-C61",
           transaction_ref: this.transaction_ref,
           machineid: "YUIHBH7876JJK",
           amount: this.amount.toString()
@@ -119,9 +119,7 @@ export default {
         .post(
           "http://class54-backend.herokuapp.com/admin/desktop-subscription/payment/verification",
         {
-
           transaction_ref: this.transaction_ref,
-         
         }
         )
         .then((result) => {

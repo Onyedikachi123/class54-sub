@@ -1,7 +1,7 @@
 <template>
 <div class="footer">
   <v-container>
-      <p class="text-center">Copyright  © 2021. Class54 Education LTD.</p>
+      <p class="text-center">Copyright  © {{new Date().getFullYear()}}. Class54 Education LTD.</p>
   </v-container>
   </div>
 </template>

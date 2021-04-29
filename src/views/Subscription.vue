@@ -14,17 +14,18 @@
               name="phone"
               id="phone"
               v-model="phone"
+              
               required
             />
             <!-- <button type="submit" class="registerbtn">Proceed</button> -->
             <paystack
               :amount="amount * 100"
-              :email="`${phone}@gmail.com`"
+              :email="`${phone}@class54.com`"
               :paystackkey="paystackkey"
               :reference="reference"
               :callback="processPayment"
               :close="close"
-              class="btn subscriptionbtn w-100 mt-5"
+              class="btn subscriptionbtn w-100 mt-5 animate__animated animate__zoomIn"
             >
               Proceed
             </paystack>
@@ -80,9 +81,9 @@ export default {
   },
   methods: {
     processPayment(response)  {
-      console.log(response)
+      // console.log(response)
       this.transaction_ref = response.reference;
-      console.log(this.transaction_ref)
+      // console.log(this.transaction_ref)
       this.postData();
      this.verifyData();
       // if (response.status == "200") {
@@ -125,7 +126,6 @@ export default {
         .then((result) => {
           console.log(result);
         });
-      this.phone = "";
       
     },
   },

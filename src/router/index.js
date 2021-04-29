@@ -17,7 +17,7 @@ const routes = [
   //   component: () => import( '../views/Subscription.vue')
   // },
   {
-    path: '/Subscription/:id',
+    path: '/Subscription',
     name: 'Subscription',
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route

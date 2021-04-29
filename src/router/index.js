@@ -10,8 +10,14 @@ const routes = [
     name: 'Home',
     component: Home
   },
+  // {
+  //   path: '/Subscription',
+  //   name: 'Subscription',
+
+  //   component: () => import( '../views/Subscription.vue')
+  // },
   {
-    path: '/Subscription',
+    path: '/Subscription/:id',
     name: 'Subscription',
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route

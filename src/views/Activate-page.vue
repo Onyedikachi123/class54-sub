@@ -5,7 +5,7 @@
     <div class="activate-wrapper">
       <v-container>
         <v-row justify="center" class="mt-9">
-          <section class="Activate__content">
+          <section class="Activate__content animate__animated animate__zoomIn">
             <div class="Activate__title">
               <h4>Activate your App</h4>
             </div>
@@ -31,7 +31,7 @@
                         id="number"
                         required
                       />
-                      <button type="submit" class="numberbtn mb-3">
+                      <button type="submit" class="numberbtn mb-3 animate__animated animate__fadeInUpBig">
                         Proceed
                       </button>
                     </form>

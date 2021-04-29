@@ -5,7 +5,7 @@
     <div class="download-wrapper">
       <v-container>
         <v-row justify="center" no-gutters style="display: grid" class="mt-9">
-          <section class="Download__content">
+          <section class="Download__content animate__animated animate__zoomIn">
             <div class="download__title">
               <img
                 src="../assets/JAMB 1.png"

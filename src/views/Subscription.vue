@@ -25,7 +25,7 @@
               :reference="reference"
               :callback="processPayment"
               :close="close"
-              class="btn subscriptionbtn w-100 mt-5 animate__animated animate__zoomIn"
+              class="btn subscriptionbtn w-100 mt-5"
             >
               Proceed
             </paystack>
@@ -53,14 +53,15 @@ export default {
     Footer,
     paystack,
   },
-  data: () => {
+  data () {
     return {
       paystackkey: "pk_test_7ec5ca2a828fc887b0a394b93a6d814725d7c0e5",
       phone: "",
       transaction_ref: "",
-      machineid: "",
-      serial: "",
+      machineid: this.$route.query.machineid,
+      serial: this.$route.query.serial,
       amount: 2000,
+      Subscription: {},
       channels: ['card']
     };
    
@@ -103,9 +104,9 @@ export default {
           "http://class54-backend.herokuapp.com/admin/activate",
         {
           phone_no: this.phone,
-          serial: "J8F8-F73-C61",
+          serial: this.serial, // J8F8-F73-C61
           transaction_ref: this.transaction_ref,
-          machineid: "YUIHBH7876JJK",
+          machineid: this.machineid, // YUIHBH7876JJK
           amount: this.amount.toString()
         }
         )
@@ -126,7 +127,7 @@ export default {
         .then((result) => {
           console.log(result);
         });
-      
+      this.phone = "";
     },
   },
   
@@ -141,11 +142,12 @@ input[type="tel"] {
   margin: 5px 0 22px 0;
   display: inline-block;
   border: none;
-  background: #fff;
+  border-radius: 4px;
+ background-color: #ddd;
 }
 
 input[type="tel"]:focus {
-  background-color: #ddd;
+  background-color: #fff;
   outline: none;
   transition: background-color 0.5s ease;
 }

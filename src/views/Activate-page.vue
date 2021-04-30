@@ -14,7 +14,7 @@
                 <v-flex xs12 md7>
                   <v-container>
                     <form class="activate-form">
-                      <br />
+
                       <label for="number">10-Digit unique serial number</label>
                       <input
                         type="text"
@@ -31,7 +31,7 @@
                         id="number"
                         required
                       />
-                      <button type="submit" class="numberbtn mb-3 animate__animated animate__fadeInUpBig">
+                      <button type="submit" class="numberbtn mb-3">
                         Proceed
                       </button>
                     </form>
@@ -157,8 +157,8 @@ input[type="text"] {
   margin: 5px 0 22px 0;
   display: inline-block;
   border: none;
-  background: #fff;
-  border: 1px solid #ccc;
+ background: #FAFAFA;
+  border: 1px solid #e8e8e8;
   border-radius: 4px;
 }
 
@@ -168,8 +168,9 @@ input[type="text"] {
 :-moz-placeholder {color: #BDBDBD;;} 
 
 input[type="text"]:focus {
-  background-color: #ddd;
-  outline: none;
+   outline: none !important;
+  background-color: #fff;
+  border: 1px solid #29CC7A !important;
   transition: background-color 0.5s ease;
 }
 

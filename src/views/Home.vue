@@ -250,6 +250,7 @@ margin-top: 70px;
 .home input[type="text"] {
   border: 1px solid #000;
   width: 400px;
+   outline: none !important;
   height: 54px;
   padding: 0 15px;
   border-radius: 4px 4px 4px 4px;

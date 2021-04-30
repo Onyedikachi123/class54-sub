@@ -5,7 +5,7 @@
     <div class="download-wrapper">
       <v-container>
         <v-row justify="center" no-gutters style="display: grid" class="mt-9">
-          <section class="Download__content animate__animated animate__zoomIn">
+          <section class="Download__content">
             <div class="download__title">
               <img
                 src="../assets/JAMB 1.png"
@@ -15,7 +15,7 @@
               <h4>Offline JAMB CBT Software (2021)</h4>
             </div>
             <div class="download__text">
-              <p class="pt-9">
+              <p class="pt-4">
                 Class54’s JAMB CBT PRACTICE SOFTWARE, is a Computer Testing &
                 Preparatory Software, designed to help candidates prepare for
                 and familiarize themselves with the coming JAMB CBT examination.
@@ -42,12 +42,12 @@
                 <p class="mt-6" style="font-size: 13px">124MB</p>
               </div>
               <div class="download-btn">
-                <button>Downlaod now</button>
+                <button>Download now</button>
               </div>
             </div>
             <!-- </div> -->
           </section>
-          <section class="faq-section mt-9">
+          <section class="faq-section mt-9" style="margin-bottom: -100px;">
             <h4 class="mb-4">Frequently asked questions</h4>
             <div class="faqs">
             <FAQ 
@@ -61,8 +61,9 @@
            </div>
           </section>
         </v-row>
+        <Footer />
       </v-container>
-      <Footer />
+      
     </div>
     
   </div>
@@ -135,7 +136,7 @@ export default {
   width: 800px;
   /* height: 397px; */
   background: #ffffff;
-  box-shadow: 0px 3px 4px rgba(0, 35, 16, 0.1);
+  box-shadow: 0px 3px 4px rgba(0, 38, 19, 0.1);
   border-radius: 4px;
   /* border: 1px solid #ccc; */
   padding: 20px 30px;
@@ -173,13 +174,15 @@ export default {
 .action-group .download-file {
   display: flex;
 }
-.action-group button {
+.Download-page .download-btn {
   background-color: #29cc7a;
-  justify-content: center;
-  align-items: center;
-  padding: 8px 10px;
-  margin-top: 14px;
+  /* justify-content: center;
+  align-items: center; */
+      padding:12px;
+  height: 54px;
+  margin-top: 5px;
   border-radius: 4px;
+  cursor: pointer;
   color: #fff;
 }
 .faq {
@@ -188,9 +191,10 @@ export default {
   max-width: 796px;
   margin: 15px auto;
   padding: 15px;
-  border-radius:8px;
-  box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+  border-radius:4px;
+  box-shadow: 0px 3px 4px rgba(0, 38, 19, 0.1);
   background-color: #fff;
+  cursor: pointer;
 }
 .faq .question {
   position: relative;
@@ -207,12 +211,13 @@ export default {
   right: 0px;
   transform: translateY(-50%)rotate(0deg);
 
-  width: 30px;
-  height: 30px;
+  width: 15px;
+  height: 15px;
   background-image: url('../components/arrow-down-mint.svg');
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
+  cursor: pointer;
 
   transition: all 0.4s linear;
 }

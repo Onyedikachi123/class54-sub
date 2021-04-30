@@ -1,7 +1,7 @@
 <template>
   <div class="home">
-    <v-container class="home-container">
-      <div class="header-logo mb-9 animate__animated animate__fadeInLeft">
+    <v-container class="home-container" style="padding: 0px">
+      <div class="header-logo">
         <svg
           width="200"
           height="57"
@@ -65,27 +65,26 @@
       </div>
       <v-layout row wrap>
         <v-flex xs12 md6>
-          <h3 class="home-heading mb-5 animate__animated animate__fadeInLeft">
+          <h3 class="home-heading mb-5">
             Class54 is a Personalised and adaptive learning platform that is
             optimised to help you prepare for examinations.
           </h3>
           <p
-            class="mb-8 animate__animated animate__fadeInLeft"
-            style=" font-size: 20px;"
+            class="mb-8"
+            style=" font-size: 19px; font-weight: 400; font-style: normal; line-height: 30px;"
           >
             We are building a one-stop shop for examination preparations, School
             admissions for Pre-college, Undergraduate and Post-graduate levels.
           </p>
           <p
-            class="mb-4 animate__animated animate__fadeInLeft"
-            style="font-size: 20px; font-weight: 600"
+            class="mb-4"
+            style="font-size: 20px; font-weight: 600; margin-top: 65px; color: #333333;"
           >
             Signup below to get notified when we launch
           </p>
           <form
             @submit="postData"
             method="post"
-            class="animate__animated animate__fadeInLeft"
           >
             <label>
               <input
@@ -96,11 +95,11 @@
               <button type="submit">Notify me</button>
             </label>
           </form>
-          <p class="mt-5 span-p animate__animated animate__fadeInLeft">
+          <p class="mt-5 span-p">
             Have an enquiry? Email us at <span>info@class54.com</span>
           </p>
           <p
-            class="my-15 animate__animated animate__fadeInLeft"
+            class="my-15"
             style="font-size: 12px"
           >
             Copyright © 2021. Class54 Education LTD.
@@ -170,7 +169,7 @@
         </v-flex>
         <v-flex xs12 md6>
           <div
-            class="float-right home-imgage animate__animated animate__fadeInRight"
+            class="float-right home-img animate__animated animate__zoomIn"
           >
             <img src="../assets/Group 4.png" alt="Home Image" />
           </div>
@@ -178,7 +177,7 @@
       </v-layout>
       <v-snackbar 
       v-model="snackbar"  
-      top 
+      right
       :timeout="6000"
       color="success">
         {{successText}}
@@ -221,28 +220,39 @@ export default {
 </script>
 
 <style>
+
 .home {
-  background: linear-gradient(180deg, #e3fff1 -82.57%, #ffffff 100%);
-  padding-top: 100px;
+  background: linear-gradient(180deg, #e3fff1 -82.57%, #ffffff 100%) no-repeat center center fixed;
+  /* padding-top: 100px; */
+   -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 .home-container {
   /* margin-top: 100px !important; */
   margin-bottom: 36px !important;
 }
+.home .header-logo svg{
+  margin-top: 170px;
+}
 
 .home-heading {
-  color: #00506b;
-  font-size: 27px;
-  font-weight: 700 !important;
+ color: #00506b;
+ font-size: 33px;
+font-weight: 700 !important;
+line-height: 44.8px;
+margin-top: 70px;
 }
 .home label {
   position: relative;
 }
 .home input[type="text"] {
-  border: 1px solid #cecece;
+  border: 1px solid #000;
   width: 400px;
-  height: 40px;
+  height: 54px;
   padding: 0 15px;
+  border-radius: 4px 4px 4px 4px;
 }
 .home button {
   position: absolute;
@@ -254,39 +264,44 @@ export default {
   padding: 0px 15px;
   letter-spacing: 1.2px;
   border: none;
-  height: 40px;
+  height: 54px;
   cursor: pointer;
+  border-radius: 0px 4px 4px 0px;
+}
+.home input[type="text"]:focus {
+ outline: none;
 }
 .home .span-p span {
-  font-weight: 800 !important;
+  font-weight: 600 !important;
   font-size: 16px;
 }
 .home .span-p {
-  font-weight: 600;
+  font-weight: 400;
+  color: #000;
 }
 .home .first-design {
   position: absolute;
   left: -0.09%;
   right: 76.6%;
-  top: 73.5%;
+  top: 81.5%;
   bottom: -57.21%;
 }
 .home .second-design {
   position: absolute;
   left: 8.66%;
-  top: 86.55%;
+  top: 92.55%;
 }
 .home .third-design {
   position: absolute;
   left: 31.88%;
-  top: 78.7%;
+  top: 85.7%;
 }
 .home .fourth-design {
   position: absolute;
   left: 43.88%;
-  top: 56.7%;
+  top: 66.7%;
 }
-.home .home-imgage img {
+.home .home-img img {
   margin-top: -125px;
   width: 80%;
   margin-left: 33%;
@@ -300,9 +315,9 @@ export default {
     padding: 0 25px !important;
   }
   .home input[type="text"] {
-    width: 350px;
+    width: 400px;
   }
-  .home .home-imgage img {
+  .home .home-img img {
     display: block;
     margin-left: auto;
     margin-right: auto;

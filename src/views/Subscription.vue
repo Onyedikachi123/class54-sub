@@ -128,9 +128,9 @@ export default {
           console.log(result);
         });
       this.phone = "";
+      this.$router.push("/loader");
     },
   },
-  
 };
 </script>
 

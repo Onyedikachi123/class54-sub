@@ -70,14 +70,14 @@
             optimised to help you prepare for examinations.
           </h3>
           <p
-            class="mb-8"
+            class="mb-8 first-p"
             style=" font-size: 19px; font-weight: 400; font-style: normal; line-height: 30px;"
           >
             We are building a one-stop shop for examination preparations, School
             admissions for Pre-college, Undergraduate and Post-graduate levels.
           </p>
           <p
-            class="mb-4"
+            class="mb-4 second-p"
             style="font-size: 20px; font-weight: 600; margin-top: 65px; color: #333333;"
           >
             Signup below to get notified when we launch
@@ -99,10 +99,10 @@
             Have an enquiry? Email us at <span>info@class54.com</span>
           </p>
           <p
-            class="my-15"
+            class="my-15 footer-para"
             style="font-size: 12px"
           >
-            Copyright © 2021. Class54 Education LTD.
+            Copyright © {{new Date().getFullYear()}}. Class54 Education LTD.
           </p>
 
           <div class="deigns">
@@ -316,7 +316,8 @@ margin-top: 70px;
     padding: 0 25px !important;
   }
   .home input[type="text"] {
-    width: 400px;
+    width: 337px;
+    margin: 0 20px;
   }
   .home .home-img img {
     display: block;
@@ -324,6 +325,32 @@ margin-top: 70px;
     margin-right: auto;
     margin-top: -41px;
     width: 100%;
+  }
+  .home .header-logo svg {
+    margin-top: 50px;
+  }
+  .home-heading {
+    padding: 0 24px;
+    font-size: 24px;
+  }
+   .first-p {
+    margin: -9px 24px;
+    font-size: 16px !important;
+  }
+     .second-p {
+    margin: 0px 24px !important;
+    font-size: 16px !important;
+  }
+  .home button {
+    height: 55px !important;
+    top: -1px !important;
+    right: 7px;
+  }
+  .home .span-p {
+    margin: 0 24px;
+  }
+  .footer-para {
+    margin: 0 24px;
   }
 }
 </style>

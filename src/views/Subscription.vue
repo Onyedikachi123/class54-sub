@@ -101,7 +101,7 @@ export default {
     postData() {
       axios
         .post(
-          "http://class54-backend.herokuapp.com/admin/activate",
+          "https://class54-backend.herokuapp.com/admin/activate",
         {
           phone_no: this.phone,
           serial: this.serial, // J8F8-F73-C61
@@ -119,7 +119,7 @@ export default {
      verifyData() {
       axios
         .post(
-          "http://class54-backend.herokuapp.com/admin/desktop-subscription/payment/verification",
+          "https://class54-backend.herokuapp.com/admin/desktop-subscription/payment/verification",
         {
           transaction_ref: this.transaction_ref,
         }
@@ -128,7 +128,7 @@ export default {
           console.log(result);
         });
       this.phone = "";
-      this.$router.push("/loader");
+      // this.$router.push("/loader");
     },
   },
 };
@@ -141,6 +141,7 @@ input[type="tel"] {
   padding: 10px;
   margin: 5px 0 22px 0;
   display: inline-block;
+  height: 54px;
   border: none;
   border-radius: 4px;
  background-color: #ddd;
@@ -175,6 +176,7 @@ input[type="tel"]:focus {
   cursor: pointer;
   width: 100%;
   background: #29cc7a;
+  height: 54px;
   border-radius: 4px;
 }
 

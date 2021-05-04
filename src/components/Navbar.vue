@@ -128,8 +128,8 @@ nav .icon-burger {
   transform: translateY(-50%);
 }
 nav .icon-burger .line {
-  width: 30px;
-  height: 5px;
+  width: 25px;
+  height: 2px;
   background-color: #00AE56;
   margin: 5px;
   border-radius: 3px;
@@ -142,8 +142,9 @@ nav .icon-burger .line {
     /* justify-content: center; */
   }
   nav :checked ~ .links {
-    bottom: 591px !important;
-    top: 61px;
+    bottom: 578px !important;
+    top: 60px;
+
 }
   nav .links {
     float: none;
@@ -175,7 +176,7 @@ nav .icon-burger .line {
     transform: translateY(10px) rotate(225deg);
   }
     nav :checked ~ .icon-burger .line:nth-child(3) {
-    transform: translateY(-10px) rotate(-225deg);
+    transform: translateY(-4px) rotate(-225deg);
   }
     nav :checked ~ .icon-burger .line:nth-child(2) {
     opacity: 0;

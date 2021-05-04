@@ -204,7 +204,7 @@ export default {
     postData(e) {
       axios
         .post(
-          "http://class54-backend.herokuapp.com/admin/notify/create",
+          "https://class54-backend.herokuapp.com/admin/notify/create",
           this.formData
         )
         .then((result) => {
@@ -248,11 +248,12 @@ margin-top: 70px;
   position: relative;
 }
 .home input[type="text"] {
-  border: 1px solid #000;
+  border: 1px solid #E0E0E0;
   width: 400px;
    outline: none !important;
   height: 54px;
   padding: 0 15px;
+  background-color: #F9F9F9;
   border-radius: 4px 4px 4px 4px;
 }
 .home button {
@@ -262,6 +263,7 @@ margin-top: 70px;
   right: 0;
   background-color: #29cc7a;
   color: #fff;
+  font-weight: 600;
   padding: 0px 15px;
   letter-spacing: 1.2px;
   border: none;
@@ -269,8 +271,13 @@ margin-top: 70px;
   cursor: pointer;
   border-radius: 0px 4px 4px 0px;
 }
+/* .home button:hover {
+  background-color: #00CA64;
+} */
 .home input[type="text"]:focus {
  outline: none;
+ background-color: #fff;
+ border: 1px solid #29CC7A;
 }
 .home .span-p span {
   font-weight: 600 !important;
@@ -323,7 +330,7 @@ margin-top: 70px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: -41px;
+    margin-top: -30px;
     width: 100%;
   }
   .home .header-logo svg {
@@ -351,6 +358,9 @@ margin-top: 70px;
   }
   .footer-para {
     margin: 0 24px;
+    position: absolute;
+    bottom: -4%;
+    left: 20%;
   }
 }
 </style>
